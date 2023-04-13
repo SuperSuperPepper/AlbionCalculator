@@ -9,6 +9,6 @@ A easy tool to aclculator  the amount of material needed.
 
 直接下载Release 压缩包使用。
 
-![](./pic1.jpg)
+![](./doc/pic1.jpg)
 
-![](./pic2.jpg)
+![](./doc/pic2.jpg)
