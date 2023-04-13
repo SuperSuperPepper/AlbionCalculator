@@ -99,6 +99,11 @@ public class CalculatorView : MonoBehaviour
 
     public void ShowResult(int[] value)
     {
+        for (int i = 0; i < resultTexts.Length; i++)
+        {
+            resultTexts[i].text = "0";
+        }
+        
         for (int i = 0; i < value.Length; i++)
         {
             resultTexts[i].text = value[i].ToString();

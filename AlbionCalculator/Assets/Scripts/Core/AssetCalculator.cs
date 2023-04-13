@@ -87,49 +87,49 @@ public class AssetCalculator
 
     int[] GetL2(int x2,float rate,int[] result)
     {
-        result[1] += Mathf.FloorToInt(x2*rate);
+        result[1] += Mathf.CeilToInt(x2*rate);
         return result;
     }
 
     int[] GetL3(int x3,float rate,int[] result)
     {
         result = GetL2(x3,rate,result);
-        result[2]+=Mathf.FloorToInt(x3*rate);;
+        result[2]+=Mathf.CeilToInt(x3*2*rate);;
         return result;
     }
     
     int[] GetL4(int x4,float rate,int[] result)
     {
         result = GetL3(x4,rate,result);
-        result[3] +=Mathf.FloorToInt(x4*2*rate);
+        result[3] +=Mathf.CeilToInt(x4*2*rate);
         return result;
     }
     
     int[] GetL5(int x5,float rate,int[] result)
     {
         result = GetL4(x5,rate,result);
-        result[4]+=Mathf.FloorToInt(x5*3*rate);;
+        result[4]+=Mathf.CeilToInt(x5*3*rate);;
         return result;
     }
     
     int[] GetL6(int x6,float rate,int[] result)
     {
         result = GetL5(x6,rate,result);
-        result[5]+=Mathf.FloorToInt(x6*4*rate);
+        result[5]+=Mathf.CeilToInt(x6*4*rate);
         return result;
     }
     
     int[] GetL7(int x7,float rate,int[] result)
     {
         result = GetL6(x7,rate, result);
-        result[6] +=Mathf.FloorToInt(x7 * 5*rate); 
+        result[6] +=Mathf.CeilToInt(x7 * 5*rate); 
         return result;
     }
     
     int[] GetL8(int x8,float rate,int[] result)
     {
         result = GetL7(x8, rate,result);
-        result[7]+=Mathf.FloorToInt(x8*6*rate);
+        result[7]+=Mathf.CeilToInt(x8*5*rate);
         return result;
     }
 }
